@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Top Bar */
+
+.topbar {
+  background: #063970;
+  color: white;
+  padding: 8px 7%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* Navigation */
+
+nav {
+  background: white;
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px #ddd;
+}
+
+nav h1 {
+  color: #063970;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #063970;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 500px;
+  background:
+    linear-gradient(rgba(0, 30, 70, .7), rgba(0, 30, 70, .7)),
+    url(NOVA_logo_958_4x500.png)
+    center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 110px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #f5b400;
+  color: #111;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Sections */
+
+.section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  color: #063970;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.light {
+  background: #f5f7fa;
+}
+
+/* Cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 3px 15px #ddd;
+}
+
+.card h3 {
+  color: #063970;
+  margin-bottom: 12px;
+}
+
+/* Notices */
+
+.notice {
+  background: white;
+  margin: 12px auto;
+  padding: 18px;
+  max-width: 800px;
+  text-align: left;
+  border-left: 5px solid #f5b400;
+  box-shadow: 0 2px 8px #ddd;
+}
+
+.notice strong {
+  display: block;
+  color: #063970;
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.gallery div {
+  height: 180px;
+  background: #063970;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+/* Form */
+
+form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button {
+  padding: 14px;
+  border: none;
+  background: #063970;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0a55a0;
+}
+
+/* Footer */
+
+footer {
+  background: #06284d;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
